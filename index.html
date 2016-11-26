@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>KyivPy19</title>
+
+		<meta name="description" content="Asyncio">
+		<meta name="author" content="Nikolay Novik">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+		<link rel="stylesheet" href="css/my.css">
+
+		<!-- Code syntax highlighting -->
+        <link class="codestyle" rel="stylesheet" href="css/tomorrow.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+<!-- ####################################################################  -->
+               <section id="intro" class="aboutme">
+                    <img src='images/ava5.png' style="background:none; border:none; box-shadow:none;">
+                    <h1></h1>
+                    <h1></h1>
+
+					<h3>How to Stop Worrying and Start Contrituting to OpenSource</h3>
+					<p> Nikolay Novik</p>
+                    <p><a href="http://github.com/jettify">https://github.com/jettify</a></p>
+					<p>KyivPy19</p>
+			   </section>
+<!-- ####################################################################  -->
+				<section id="poll"> <h5> Poll: you and OpenSource</h5>
+                    <img src='images/notopensource.jpg'>
+                    <ol>
+                        <li>I contribute on regular basis</li>
+                        <li>I contributed few commites here and there</li>
+                        <li>I raised issues on GitHub</li>
+                        <li>OpenSource is kinda cool!</li>
+                    </ol>
+				</section>
+<!-- ####################################################################  -->
+				<section>
+					<h6>Motivation. Why you might want to contribute?</h6>
+                    <img src='images/contribution.png' height="400px">
+				</section>
+<!-- ####################################################################  -->
+				<section>
+					<h6>You will learn how to write readable code for free</h6>
+                    <img src='images/canread.jpg' height="600px">
+				</section>
+<!-- ####################################################################  -->
+				<section>
+					<h6>You may be hired by Google</h6>
+                    <img src='images/dustin.png'>
+				</section>
+<!-- ####################################################################  -->
+				<section>
+					<h6>You may fail Google interview</h6>
+                    <img src='images/brew.png'>
+				</section>
+<!-- ####################################################################  -->
+				<section>
+					<h6>You will have something to show on interview</h6>
+                    <img src='images/codereview.jpg'>
+				</section>
+<!-- ####################################################################  -->
+				<section>
+					<h6>You will earn higher Guido number</h6>
+                    <img src=''>
+                    <ol>
+                        <li>GN=1 if you have commits with GvR in same repository</li>
+                        <li>GN=2 if you have commits with person who have commits with GvR in same repository</li>
+                        <li>you got the idea</li>
+                    </ol>
+				</section>
+<!-- ####################################################################  -->
+				<section>
+					<h6>So how to start? Just watch projects you care about</h6>
+                    <img src='images/aiohttp.png'>
+				</section>
+<!-- ####################################################################  -->
+				<section>
+					<h6>Help to improve docs</h6>
+                    <img src='images/docs.png'>
+                    <p>Guess who is bitdancer?</p>
+				</section>
+<!-- ####################################################################  -->
+				<section>
+					<h6>If you think you are way too cool to contribute docs</h6>
+                    <img src='images/coredevs.jpg' height="500px">
+                    <p>Python core dev contributed docs for aiopg!</p>
+				</section>
+<!-- ####################################################################  -->
+				<section>
+					<h6>Measure coverage and write tests!</h6>
+                    <img src='images/coverage.png' height="500px">
+                    <p></p>
+				</section>
+<!-- ####################################################################  -->
+				<section>
+					<h6>Find TODOs and FIXMEx in source code and fix them</h6>
+                    <img src='images/todo.png' height="500px">
+                    <p></p>
+				</section>
+<!-- ####################################################################  -->
+				<section>
+					<h6>If you can contribute feature/fix, make several small PRs instead of one huge</h6>
+                    <img src='images/smallpr2.png'>
+                    <p></p>
+				</section>
+<!-- ####################################################################  -->
+				<section>
+                    <h6>Recap</h6>
+                    <img src=''>
+                    <ol>
+                        <li>Contribute to project you care about</li>
+                        <li>Read the source code</li>
+                        <li>Help to answer questions</li>
+                        <li>Write docs</li>
+                        <li>Write tests</li>
+                        <li>Contribute features</li>
+                        <li>Have Fun!</li>
+                    </ol>
+				</section>
+<!-- ####################################################################  -->
+				<section>
+					<h2>Thank you!</h2>
+                       and check out aio-libs!
+					<p><a href="https://github.com/aio-libs">https://github.com/aio-libs</a></p>
+				</section>
+<!-- ####################################################################  -->
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
