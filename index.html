@@ -119,6 +119,26 @@
         </section>
 <!-- ####################################################################  -->
         <section>
+          <h6>Example</h6>
+            <pre style="width: 100%;"><code data-trim data-noescape>
+import jinja2
+import japronto_jinja2
+from japronto import Application
+
+@japronto_jinja2.template('index.html')
+def index(request):
+    context = {'first_name': 'Ja', 'second_name': 'Pronto'}
+    return context
+
+app = Application()
+japronto_jinja2.setup(app,
+                      loader=jinja2.FileSystemLoader('templates'))
+app.router.add_route('/', index)
+app.run(debug=True)
+            </code></pre>
+        </section>
+<!-- ####################################################################  -->
+        <section>
           <h6>Some libs</h6>
           <div class="columns">
             <div style="width: 45%; display: inline-block;">
@@ -139,24 +159,13 @@
         </section>
 <!-- ####################################################################  -->
         <section>
-          <h6>So how to start? Just watch projects you care about</h6>
-                    <img src='images/aiohttp.png'>
-        </section>
-<!-- ####################################################################  -->
-        <section>
-          <h6>Measure coverage and write tests!</h6>
-          <img src='images/coverage.png' height="500px">
-          <p></p>
-        </section>
-<!-- ####################################################################  -->
-        <section>
           <h6>Resources</h6>
           <ol>
             <li><a target="_blank" href="https://medium.freecodecamp.com/million-requests-per-second-with-python-95c137af319">A million requests per second with Python</a></li>
             <li><a target="_blank" href="https://magic.io/blog/uvloop-blazing-fast-python-networking/">uvloop: Blazing fast Python networking</a></li>
             <li><a target="_blank" href="http://blog.kazuhooku.com/2014/11/the-internals-h2o-or-how-to-write-fast.html">The internals of picohttpparser</a></li>
             <li><a target="_blank" href="http://libuv.org">libuv</a></li>
-            <li><a target="_blank" href="">uvloop: Blazing fast Python networking</a></li>
+            <li><a target="_blank" href="https://github.com/audreyr/cookiecutter">cookiecutter</a></li>
           </ol>
         </section>
 <!-- ####################################################################  -->
